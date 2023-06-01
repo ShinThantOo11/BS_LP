@@ -32,6 +32,12 @@
 .fadeIn{
     animation: fadein 0.5s;
 }
+.rounded-4{
+    border-radius: 15px !important;
+}
+.name{
+    font-size: 30px;
+}
 @keyframes fadein {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
@@ -105,6 +111,25 @@
     transform: scale(1.1);
     font-weight: bold;
     color: var(--ads-color);
+}
+
+.main .introduction{
+    background-color: var(--bg-one-color);
+}
+
+
+/* .introduction .img-container img{
+    border: 0.3px solid rgba(0, 0, 0, 0.2);
+} */
+
+.introduction .logo{
+    width: 45px;
+}
+
+
+.introduction .text-container{
+    background-color: var(--bg-two-color);
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 
 .fulfilling .card .no{
