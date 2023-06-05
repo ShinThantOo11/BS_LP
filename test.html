@@ -32,11 +32,75 @@
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px)
         }
+        .skills{
+            background-color: #F5E6E6;
+        }
+        .skills .steps{
+            margin-top: 45px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .skills .steps::before{
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 40%;
+            width: 30px;
+            height: 30px;
+            border-bottom: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            z-index: 0;
+        }
+        .skills .steps.one{
+            background-color: #053766;
+        }
+        .skills .steps.one::before{
+            border-top: 30px solid #053766;
+        }
+        .skills .steps.two{
+            background-color: #F5AE00;
+        }
+        .skills .steps.two::before{
+            border-top: 30px solid #F5AE00;
+        }
+        .skills .steps.three{
+            background-color: #FF6699;
+        }
+        .skills .steps.three::before{
+            border-top: 30px solid #FF6699;
+        }
+        .skills .steps.four{
+            background-color: #008000;
+        }
+        .skills .steps.four::before{
+            border-top: 30px solid transparent;
+        }
+        .how-to-join{
+            background-image: url(./images/background\ 9.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .how-to-join .card{
+            min-height: 190px;
+        }
+        .how-to-join .card .no{
+            font-size: 32px;
+        }
+        .how-to-join .img-container{
+            width: 80px;
+        }
+        .how-to-join .how-to-join-text{
+            border: 2px solid red;
+            border-radius: 10px 40px 10px 40px;
+        }
     </style>
 </head>
 <body>
 
-    <div class="fullfilling ">
+    <article class="fullfilling ">
         <div class="container  py-5">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4"  style="margin-top: 20px;">
@@ -133,10 +197,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 
     
-    <div class="thankyou py-5">
+    <article class="thankyou py-5">
         <div class="d-flex justify-content-center align-items-center">
             <div class="thank-card text-center px-4 py-2 shadow-lg rounded-4">
                 <h4 class="text-primary fw-bold">\ おめでとうございます！ /</h4>
@@ -146,7 +210,102 @@
                 <div class="mt-4">我社でOJTプログラムを 2019年04月05日から開始～現在</div>
             </div>
         </div>
-    </div>
+    </article>
+
+    <article class="skills">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="">
+                        <div class="title">
+                            <h4 class="fw-bold text-center">こんな感じでどんどん</h4>
+                            <h4 class="fw-bold text-center">自分のスキルアップ道があり！</h4>
+                        </div>
+                        <div class="steps one text-white text-center p-3 shadow">
+                                バタフライOJTプログラムに参加し、日本のIT現場で活動出来るようにSEの基礎力を得る。(3ヶ月)
+                        </div>
+                        <div class="steps two text-white text-center p-3 shadow">
+                            バタフライOJTプログラムに参加し、日本のIT現場で活動出来るようにSEの基礎力を得る。(3ヶ月)
+                        </div>
+                        <div class="steps three text-white text-center p-3 shadow">
+                            バタフライOJTプログラムに参加し、日本のIT現場で活動出来るようにSEの基礎力を得る。(3ヶ月)
+                        </div>
+                        <div class="steps four text-white text-center p-3 shadow">
+                            バタフライOJTプログラムに参加し、日本のIT現場で活動出来るようにSEの基礎力を得る。(3ヶ月)
+                        </div>
+                        <div class="img-container col-10 mx-auto mt-3">
+                            <img src="./images/scccess.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <h4 class="text-center fw-bold">我社で1週間の流れ</h4>
+                    <div class="img-container mt-4">
+                        <img src="./images/schedule.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="announcement bg-danger text-white text-center py-4 px-3 rounded-4 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, a magni aperiam nobis, aliquam dignissimos soluta id vel molestias, provident consequatur laboriosam earum dolor vitae ullam eum? Delectus, laborum a?
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <article class="how-to-join">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                    <div class="card rounded-3 border shadow">
+                        <div class="card-body position-relative">
+                            <div class="no fw-bold text-primary position-absolute">1.</div>
+                            <div class="img-container mx-auto">
+                                <img src="./images/senda mail icon.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text fw-bold text-center">
+                                info@bliss-stock.com သို့ အီးမေလ်မှတဆင့် CV ဖောင်ပေးပို့ပါ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                    <div class="card rounded-3 border shadow">
+                        <div class="card-body position-relative">
+                            <div class="no fw-bold text-primary position-absolute">2.</div>
+                            <div class="img-container mx-auto">
+                                <img src="./images/coding test icon.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text fw-bold text-center">
+                                ရွေးချယ်ခံရသောသူသာ Coding Test ဖြေရပါမည်။
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                    <div class="card rounded-3 border shadow">
+                        <div class="card-body position-relative">
+                            <div class="no fw-bold text-primary position-absolute">3.</div>
+                            <div class="img-container mx-auto">
+                                <img src="./images/online interview icon.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text fw-bold text-center">
+                                Online မှတဆင့် အင်တာဗျူးဖြေရပါမည်။
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="how-to-join-text mx-auto p-4 w-100 mt-5 shadow">
+                        <span class="">
+                            Butterfly Program ကို စိတ်ဝင်စားလို့ Joinချင်တယ်ဆိုရင် ကိုယ့်ရဲ့  CVအချက်အလက်တွေဖြည့်ထားသောဖောင်နှင့်တကွ info@bliss-stock.com သို့ သတ်မှတ်ထားသော Deadline မတိုင်ခင် အီးမေလ်ပေးပို့ပေးပါ။ ရောက်ရှိလာသော CVတွေထဲကမှ Coding Test ဖြေခွင့်ရသူတွေကိုရွေးချယ်ပြီး အီးမေလ်မှတဆင့်ပြန်လှယ်ဆက်သွယ်ပေးပါမယ်။ Coding Testမှာတော့ မိမိကြိုက်နှစ်သက်ရာ Programming Languageတခုခုနှင့်ဖြေဆိုနိုင်အောင်စီစဉ်ပေးထားပါတယ်။ Online မှတဆင့်ဖြေရမှာပါ။ Coding Test ပြီးရင်တော့ လူတွေ့အင်တာဗျူးကို Onlineကနေ ဖြေဆိုရပါမယ်။ အင်တာဗျူးမယ့်ရက်ကတော့ Coding Test ဖြေပီ တပတ်ခန့်အကြာမှာ နှစ်ရက်ခွဲပြီး ပြုလုပ်မာဖစ်ပြီး နောက်ဆုံးတက်ခွင့်ရတဲ့ စာရင်းကိုတော့ လူတွေ့အင်တာဗျူးဖြေအပြီး နှစ်ရက်ခန့်အကြာမှာ ထုတ်ပြန်ပေးသွားမှာပါ
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="activities"></article>
     
 
     <!------------------------------ bootstrap ------------------------------>
